@@ -6,8 +6,9 @@ To install the WhatsApp Video Splitter, follow these steps:
 
 1. Clone the repository from GitHub.
 2. Install the required dependencies using the `pip install -r requirements.txt` command.
-3. Insert al the videos that you wan't to split into the `input` folder.
-4. Run the `whatsapp_video_splitter.py` file.
+3. Create the `input` folder in the root project directory.
+4. Insert al the videos that you wan't to split into the `input` folder.
+5. Run the `whatsapp_video_splitter.py` file.
 
 ## Usage
 To split a video using the WhatsApp Video Splitter, follow these steps:
