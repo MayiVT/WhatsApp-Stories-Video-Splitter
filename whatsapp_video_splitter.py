@@ -10,6 +10,12 @@ output_folder = "output"
 input_folder_path = os.path.join(root_dir, input_folder)
 output_folder_path = os.path.join(root_dir, output_folder)
 
+# Check if input folder exists, create it if it doesn't
+if not os.path.exists(input_folder_path):
+    os.makedirs(input_folder_path)
+    print(f"Created '{input_folder}' folder. Please input your files in the '{input_folder}' folder and press enter key to continue.")
+    input()
+
 # Set the clip duration (in seconds)
 clip_duration = 30
 
@@ -51,3 +57,6 @@ for video_file_path in video_files:
 
     # Close the input video file
     video.close()
+
+# Wait for user input before exiting
+input("Done. Press enter key to continue.")
